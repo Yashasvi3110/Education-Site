@@ -1,0 +1,254 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: #333;
+}
+header {
+    background: linear-gradient(135deg, #002147, #0056b3);
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 65px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+.logo-container a {
+    text-decoration: none;
+    color: white;
+}
+.logo {
+    width: 55px;
+    margin-right: 12px;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+nav ul li a:hover {
+    color: #ffcc00;
+}
+.home {
+    background: url('TT\ vit.jpeg') no-repeat center center/cover;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+.home-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+.home-text {
+    position: relative;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 10px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+.home-text h2 {
+    font-size: 38px;
+    color: #ffcc00;
+}
+.home-text p {
+    font-size: 18px;
+}
+.home-text.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+section {
+    display: block;
+    padding: 50px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #0056b3, #008cff);
+    color: white;
+    margin: 30px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    width: 80%;
+    font-size: 18px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+.section-image {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+section.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+#contact {
+    padding: 50px 20px;
+    text-align: center;
+    background: #001a3b;
+    color: white;
+}
+#contact a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+}
+#contact a:hover {
+    text-decoration: underline;
+}
+footer {
+    background: #001a3b;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+.ftr {
+    background: #001a3b;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+#message{
+    text-align: center;
+    font-size: 2.5rem;
+}
+.grade-container {
+    height: 120vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+.grade-box {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 12px;
+    width: 400px;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.2);
+}
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 12px;
+    border: 1px solid white;
+    text-align: center;
+}
+th {
+    background: #ffcc00;
+    color: black;
+}
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #ffcc00;
+    color: black;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+.btn:hover {
+    background: #ff5733;
+    color: white;
+}
+h2 {
+    text-align: center;
+    color: #ffcc00;
+}
+ul {
+    padding-left: 20px;
+}
+ul li {
+    margin: 10px 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+@media (max-width: 760px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
+    }
+    .logo {
+        width: 45px;
+        margin-right: 8px;
+    }
+    nav ul {
+        text-align: center;
+        padding-top: 10px;
+    }
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+    .home {
+        height: 70vh;
+    }
+    .home-text h2 {
+        font-size: 28px;
+    }
+    .home-text p {
+        font-size: 16px;
+    }
+    section {
+        width: 90%;
+        padding: 30px 15px;
+        font-size: 16px;
+    }
+    .grade-box {
+        width: 90%;
+        padding: 20px;
+    }
+    table th, table td {
+        padding: 8px;
+        font-size: 14px;
+    }
+    .btn {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+}

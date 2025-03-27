@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="#home">
+            <img src="vit.jpg" alt="VIT Logo" class="logo"></a>
+            <h1><a href="#home">VIT Vellore</a></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="project.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h2>Student Login</h2>
+        <form>
+            <input type="text" id="username" placeholder="Username" required><br><br>
+            <input type="password" id="password" placeholder="Password" required><br><br><br>
+            <input type="button" onclick="login()" value="Login" class="btn">
+        </form>
+    </section>
+    <div id="message"></div>
+    <div class="ftr">
+        <p>&copy; <span id="year">2025</span> <a href="https://vit.ac.in" target="_blank">VIT Vellore</a>. All rights reserved.</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
